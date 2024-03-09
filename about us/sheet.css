@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background:linear-gradient(90deg,#5db4ff,#ffd852,#fa9b91);
+}
+
+.container{
+    padding: 0;
+    margin: 0 12rem 0 12rem;
+
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.link{
+    text-decoration: none;
+    color: #000;
+}
+.header{
+    width: 100%;
+    height: 100px;
+
+}
+
+.header__logo{
+    padding-top:10px;
+    width: 120px;
+    height: 100px;
+}
+
+.footer{
+    margin-top: 3rem;;
+}
+
+.footer__logo{
+    width: 100px;
+    height: 40px;
+}
+
+.footer__year{
+    color: #000;
+}

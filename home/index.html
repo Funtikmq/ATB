@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sheet.css">
+    <title>Acasa</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__item"><a href=""><img class="header__logo" src="../img/atblogo.png" alt="error"></a></div>
+        <div class="header__item">
+            <h1 class="header__tittle">ASOCIAȚIA TINERILOR BASARABENI</h1>
+        </div>
+    </div>
+
+    <div class="container home">
+        <span class="home__opacity"></span>
+        <img class="home__img" id="slider-image" src="../img/ATB1.jpg" alt="">
+        <button id="prev-button" onclick="prevImage()"></button>
+        <button id="next-button" onclick="nextImage()"></button>
+    </div>
+    
+    <span class="span__back"></span>
+    
+
+    <script>
+        var images=["../img/ATB1.jpg","../img/ATB2.jpg","../img/ATB3.jpg"];
+        var currentImageIndex = 0;
+        var sliderImage = document.getElementById("slider-image");
+
+        function prevImage(){
+            currentImageIndex--;
+            if(currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            sliderImage.src = images[currentImageIndex]
+        }
+
+        function nextImage(){
+            currentImageIndex++;
+            if (currentImageIndex >= images.length){
+                currentImageIndex = 0;
+            }
+            sliderImage.src = images[currentImageIndex];
+        }
+    </script>
+
+    <div class="container"></div>
+    <ul class="menu">
+        <div class="menu__item"> <a class="link menu__link" href="../about us/index.html">
+                <li class="menu__item-content">Despre Noi</li>
+            </a></div>
+        <div class="menu__item"><a class="link menu__link" href="../Proiecte si Activitati/index.html">
+                <li class="menu__item-content">Activități și Proiecte</li>
+            </a></div>
+        <div class="menu__item"><a class="link menu__link" href="../Student Guide/index.html">
+                <li class="menu__item-content">Ghidul Studentului</li>
+            </a></div>
+
+    </ul>
+    </div>
+
+    <div class="container">
+        <ul class="info">
+            <li class="info__item">
+                <h1 class="info__item-title">Despre noi</h1>
+                <p class="info__item-content">
+                    ASOCIAȚIA TINERILOR BASARABENI DIN BRAȘOV (ATB BRAȘOV)
+                    ESTE O ORGANIZAȚIE APOLITICĂ ȘI NONPROFIT AVÂND CA SCOPURI PRINCIPALE PROMOVAREA VALORILOR ȘI
+                    TRADIȚIILOR BASARABENE, REPREZENTAREA DREPTURILOR, RESPECTIV LIBERTĂȚILOR STUDENȚILOR ȘI
+                    ELEVILOR BASARABENI DIN BRAȘOV.
+                </p>
+            </li>
+            <li class="info__item">
+                <h1 class="info__item-title"> Viața Studențească </h1>
+                <p class="info__item-content">
+                    DINCOLO DE CONCENTRAREA RESURSELOR PENTRU PROPRIA FORMARE PROFESIONALĂ,
+                    VIAȚA DE STUDENT PRESUPUNE ȘI O DIMENSIUNE CULTURALĂ,
+                    IMPLICARE ÎN VIAȚA COMUNITĂȚII PRIN ACȚIUNI DE VOLUNTARIAT, DAR ȘI SPIRIT DE COMPETIȚIE.
+                </p>
+            </li>
+            <li class="info__item">
+                <h1 class="info__item-title"> UniTBv și ATB în comunitate</h1>
+                <p class="info__item-content">
+                    PRIN RELAȚIA NOASTRĂ STRÂNSĂ CU INSTITUȚII DIN DOMENII DIVERSE, STUDENȚII
+                    POT PARTICIPA LA PROGRAME DE PRACTICĂ ȘI INTERNSHIP. PLANUL DE ÎNVĂȚĂMÂNT AL
+                    ACESTOR PROGRAME ESTE CONCEPUT ÎMPREUNĂ CU SPECIALIȘTII ACESTOR COMPANII.
+                </p>
+            </li>
+            <li class="info__item">
+                <h1 class="info__item-title"> Diversitate în educație</h1>
+                <p class="info__item-content">
+                    APROXIMATIV 20000 DE STUDENȚI STUDIAZĂ ÎN CELE 18 FACULTĂȚI
+                    ALE UNIVERSITĂȚII TRANSILVANIA DIN BRAȘOV, ÎN CARE SE DERULEAZĂ PROGRAME DE STUDII DE
+                    LICENȚĂ ȘI PROGRAME DE MASTERAT, ÎN TOATE DOMENIILE FUNDAMENTALE: ȘTIINȚE
+                    INGINEREȘTI, ȘTIINȚE UMANISTE, ȘTIINȚE SOCIALE, ȘTIINȚE EXACTE, MEDICINĂ,
+                    ARTE, EDUCAȚIE FIZICĂ ȘI SPORT.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="container footer">
+        <div class="footer__logo"><a href="https://unitbv.ro/" target="_blank"><img class="footer__logo"
+                    src="../img/1634631896-logo_UNITBV.png" alt="error"></a></div>
+        <div class="footer__info">
+            <p>© 2022.</p>
+            <p><a class="link" href="" target="_blank">>Politica de confidențialitate</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
